@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import { forwardRef } from "react";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 interface NavLinkCompatProps extends Omit<React.ComponentProps<"a">, "className"> {
   className?: string;
@@ -16,7 +17,7 @@ const NavLink = forwardRef<HTMLAnchorElement, NavLinkCompatProps>(
     const isPending = router.pathname.startsWith(href);
 
     return (
-      <a
+      <Link
         ref={ref}
         href={href}
         className={cn(className, isActive && activeClassName, isPending && pendingClassName)}
