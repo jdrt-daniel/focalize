@@ -74,14 +74,14 @@ const Navbar = () => {
           >
             <div className="container py-4 flex flex-col gap-4">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.name}
                   href={item.href}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   onClick={() => setOpen(false)}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </div>
           </motion.div>

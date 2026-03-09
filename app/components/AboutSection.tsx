@@ -13,7 +13,7 @@ const values = [
 const AboutSection = () => {
   return (
     <section id="nosotros" className="pt-32 pb-24 relative">
-      <div className="px-20">
+      <div className="md:px-20 lg:px-32">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
