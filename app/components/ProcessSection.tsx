@@ -26,7 +26,7 @@ const steps = [
 const ProcessSection = () => {
   return (
     <section id="proceso" className="py-24 relative">
-      <div className="container">
+      <div className="px-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

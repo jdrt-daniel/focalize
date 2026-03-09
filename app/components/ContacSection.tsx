@@ -4,7 +4,7 @@ import { ArrowRight, Mail } from "lucide-react";
 const ContactSection = () => {
   return (
     <section id="contacto" className="py-24 relative">
-      <div className="container">
+      <div className="px-20">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

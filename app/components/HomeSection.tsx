@@ -5,10 +5,10 @@ const HomeSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden grid-bg">
       {/* Gradient orbs */}
-      <div className="absolute top-1/3 left-1/2 w-80 h-80 bg-primary/10 rounded-full blur-[100px] pointer-events-none" />
-      <div className="absolute bottom-1/3 right-1/4 w-100 h-100 bg-teal-500/10 rounded-full blur-[60px] pointer-events-none" />
+      <div className="absolute top-1/3 left-1/3 w-80 h-80 bg-primary/10 rounded-full blur-[80px] pointer-events-none" />
+      <div className="absolute bottom-1/3 right-1/3 w-120 h-120 bg-teal-500/10 rounded-full blur-[80px] pointer-events-none" />
 
-      <div className="container relative z-10 pt-16 pb-16">
+      <div className="relative z-10 pt-16 pb-16">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
